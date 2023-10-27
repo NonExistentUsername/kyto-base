@@ -1,8 +1,8 @@
 from typing import Callable, List
 
 import di
-from domain import commands, events
-from service_player import handlers, messagebus, unit_of_work
+from src.domain import commands, events
+from src.service_player import handlers, messagebus, unit_of_work
 
 
 def create_message_bus(

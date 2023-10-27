@@ -4,11 +4,11 @@ import logging
 import multiprocessing.pool
 from typing import TYPE_CHECKING, Any, Callable, Dict, List, Union
 
-from domain import commands, events
-from service_player import exceptions
+from src.domain import commands, events
+from src.service_player import exceptions
 
 if TYPE_CHECKING:
-    from . import unit_of_work
+    from src.service_player import unit_of_work
 
 logger = logging.getLogger(__name__)
 
